@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual environments
+.venv/
+.venv-gpu/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Datasets and generated artifacts
+dataset/
+dataset_processed/
+dataset_final/
+data/raw/
+data/processed/
+models/*.pt
+models/*.onnx
+runs/
+results/
+outputs/
+*.log
+*.pt
+requirements-installed.txt
+!dataset/.gitkeep
+!models/.gitkeep
+!results/.gitkeep
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

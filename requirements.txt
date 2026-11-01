@@ -1,0 +1,17 @@
+# Python 3.11 is the supported project runtime.
+# CPU-only PyTorch setup used for this Intel-integrated-graphics host:
+# python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# For other hardware, select the appropriate command from https://pytorch.org/get-started/locally/
+ultralytics>=8.3.0,<9.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+streamlit>=1.30.0
+pillow>=10.0.0
+pyyaml>=6.0.0
+jupyter>=1.0.0
+ipykernel>=6.25.0
+pytest>=7.0.0

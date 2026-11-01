@@ -1,0 +1,1 @@
+"""AppleGuard Streamlit application package."""

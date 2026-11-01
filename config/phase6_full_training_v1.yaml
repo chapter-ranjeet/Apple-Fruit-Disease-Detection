@@ -1,0 +1,34 @@
+# Dedicated Phase 6 experiment configuration.
+# The final test split remains reserved for post-training evaluation.
+project:
+  name: AppleGuard AI
+  title: Apple Fruit Disease Detection Using YOLO
+  seed: 42
+
+paths:
+  dataset_root: dataset_final
+  images_root: dataset_final
+  labels_root: null
+  models_dir: models
+  results_dir: results
+
+model:
+  task: classify
+  baseline: yolo11n-cls.pt
+  optional_comparison: yolo11s-cls.pt
+  image_size: 224
+  classes: 4
+  class_names:
+    - Blotch_Apple
+    - Normal_Apple
+    - Rot_Apple
+    - Scab_Apple
+  epochs: 30
+  batch: 8
+  patience: 10
+  workers: 0
+  device: cpu
+
+inference:
+  confidence: 0.25
+  iou: 0.45

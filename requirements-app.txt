@@ -1,0 +1,2 @@
+# Install inside the project's Python 3.11 virtual environment.
+-r requirements.txt

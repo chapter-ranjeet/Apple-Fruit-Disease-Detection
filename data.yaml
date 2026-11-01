@@ -1,0 +1,7 @@
+# Dataset configuration template.
+# Do not fill in names until dataset annotations have been inspected.
+path: dataset
+train: images/train
+val: images/val
+test: images/test
+names: []
